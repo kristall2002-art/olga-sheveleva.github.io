@@ -288,6 +288,9 @@ html.dark .card:hover{border-color:#34507a;box-shadow:12px 14px 0 -2px var(--sha
 .rv-ph{position:absolute;left:30px;top:-46px;width:112px;height:112px;border-radius:22px;background:linear-gradient(160deg,var(--chip),var(--h2c));color:var(--blue);display:grid;place-items:center;box-shadow:0 12px 26px -14px rgba(22,33,58,.35);border:3px solid var(--card)}
 .rv-name{display:flex;align-items:center;gap:12px;margin:0;font:400 26px/1.2 var(--serif);color:var(--ink)}
 .rv-stars{display:block;color:var(--sand);margin:0 0 12px}
+.rv-more-w{margin:44px 0 0;text-align:center}.rv-more{cursor:pointer;background:transparent;font-family:inherit}.rv-more[hidden]{display:none}
+@media (min-width:761px){.rvs.short .rv:nth-child(n+7){display:none}}
+@media (max-width:760px){.rv-more-w{display:none}}
 .rv-nick{margin:6px 0 18px;font-size:15px;color:var(--mute)}
 .rv-head{margin:0 0 12px;font:italic 500 22px/1.3 var(--serif);color:var(--blue)}
 .rv-txt{margin:0;font-size:16px;line-height:1.65}

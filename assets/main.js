@@ -217,4 +217,11 @@ document.querySelectorAll('.btn.fill').forEach(function(b){
     links.forEach(function(a,n){a.classList.toggle('on',n===cur);});
   },{passive:true});
 })();
+/* отзывы: на компьютере сначала шесть, остальные по кнопке */
+(function(){
+  var box=document.getElementById('quotes'),btn=document.querySelector('.rv-more');
+  if(!box||!btn||box.children.length<=6)return;
+  box.classList.add('short');btn.hidden=false;
+  btn.addEventListener('click',function(){box.classList.remove('short');btn.parentNode.style.display='none';});
+})();
 })();
